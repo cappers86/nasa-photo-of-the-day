@@ -1,6 +1,7 @@
 import React, { useEffect  } from "react";
 import "./App.css";
 import NasaList from "./components/NasaList";
+import CardData from "./components/CardData";
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
     <div className="App">
        
        <NasaList />
+       <CardData />
+      
     </div>
   );
 }

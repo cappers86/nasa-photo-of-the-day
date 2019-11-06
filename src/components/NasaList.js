@@ -33,7 +33,9 @@ function NasaList() {
 		   date = {nasaData.date}
 		   explanation ={nasaData.explanation} 
 		   Img = {nasaData.hdurl}
-		   version = {nasaData.service_version}/> }
+		   version = {nasaData.service_version}	
+		   url = {nasaData.url}
+		   	/> 	}
 
 		</div>
 			
