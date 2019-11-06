@@ -6,6 +6,7 @@ const CardData = props => {
             <img className="img" src= {props.Img} alt="Space" />
             <h2>{props.title}</h2>
             <p>{props.date}</p>
+            <p>{props.version}</p>
             <p>{props.explanation}</p>
         </div>
 	);
