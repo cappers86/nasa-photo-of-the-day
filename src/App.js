@@ -1,6 +1,6 @@
 import React, { useEffect  } from "react";
 import "./App.css";
-import CardData from "./components/CardData";
+
 import NasaList from "./components/NasaList";
 
 
@@ -24,7 +24,7 @@ function App() {
   
   return (
     <div className="App">
-       <CardData />
+     
        <NasaList />
       
       
