@@ -13,7 +13,7 @@ function NasaList() {
 		axios
 			.get('https://api.nasa.gov/planetary/apod?api_key=EQscKau3FR1jR3ws84unIpvf7x5PgLrXju8nlA4i')
 			.then(response => {
-				console.log(response.data);
+				console.log('Incoming data',response.data);
 				// Setting our movies data to state
 				setNasaData(response.data);
 			})
@@ -28,7 +28,11 @@ function NasaList() {
 	return (
 		<div className="card">
 
-{<CardData key = {nasaData.date} title = {nasaData.title} explanation ={nasaData.explanation} Img = {nasaData.hdurl}/> }
+{<CardData key = {nasaData.data} 
+		   title = {nasaData.title} 
+		   date = {nasaData.date}
+		   explanation ={nasaData.explanation} 
+		   Img = {nasaData.hdurl}/> }
 
 		</div>
 			

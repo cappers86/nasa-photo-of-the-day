@@ -2,9 +2,10 @@ import React from 'react';
 
 const CardData = props => {
 	return (
-		<div className = "nasaCardClass" key = {props.date}>
-            <img class="img" src= {props.Img} alt="space" />
+		<div className = "CardData" key = {props.data}>
+            <img className="img" src= {props.Img} alt="Space" />
             <h2>{props.title}</h2>
+            <p>{props.date}</p>
             <p>{props.explanation}</p>
         </div>
 	);
