@@ -1,27 +1,55 @@
+
 .App {
   text-align: center;
+  background-color: black;
+  color: silver;
+  letter-spacing: 0.45em;
+  background-blend-mode: hard-light;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
+  border-radius: 50%;
+  
+ 
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #050505;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(253, 247, 251);
 }
 
 .App-link {
-  color: #61dafb;
+  color: silver;
+  background-color: #080808;
+  text-decoration: none;
+  align-content: center;
+
+
 }
+
+.Box-dec {
+background-color: rgb(5, 5, 5);
+
+}
+.CardData {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {
