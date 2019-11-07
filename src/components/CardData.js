@@ -1,18 +1,31 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Button } from 'reactstrap';
 
-const CardData = props => {
-	return (
-		<div className = "CardData" key = {props.data}>
-            
-            <img className="img" src= {props.Img} alt=""></img> 
-            <h1>{props.title}</h1>
-            <p>{props.date}</p>
-            <p>{props.version}</p>
-            <p>{props.explanation}</p>
-            <button className="Box-dec"><a className="App-link" href= {props.url}>See a larger version</a></button>
-            <img className="App-logo" src= {props.url} alt=""></img> 
-           
-        </div>
-	);
+
+
+import {
+  Card, CardImg, CardText, CardBody, CardLink,
+  CardTitle, CardSubtitle
+} from 'reactstrap';
+
+const CardData = (props) => {
+  return (
+    <div className = "CardData" key = {props.data} >
+      <Card>
+        <CardImg width="100%" src={props.Img} alt="Card image cap" />
+        <CardBody>
+        <CardTitle>{props.title}</CardTitle>
+            <CardText>{props.date}</CardText>
+            <CardSubtitle>{props.version}</CardSubtitle>
+          <CardText>{props.explanation}</CardText>
+          <CardLink href= {props.url}>See more images</CardLink>
+        </CardBody>
+      </Card>
+    </div>
+  );
 };
+
+
+
 export default CardData;

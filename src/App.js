@@ -1,8 +1,13 @@
 import React, { useEffect  } from "react";
+import styled from 'styled-components';
+
 import ReactStrap from './components/ReactStrap';
+
+
 import "./App.css";
 
 import NasaList from "./components/NasaList";
+
 
 
 
@@ -25,9 +30,9 @@ function App() {
   
   return (
     <div className="App">
-     <ReactStrap />
+     
      <NasaList />
-      
+     <ReactStrap />
       
      
     </div>
