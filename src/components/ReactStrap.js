@@ -4,7 +4,8 @@ import { Button } from 'reactstrap';
 
 function ReactStrap() {
 	return (
-		<div>
+		<div >
+		
 			
 			
 		</div>
