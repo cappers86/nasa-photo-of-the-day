@@ -80,6 +80,7 @@ const CardData = (props) => {
           
         </CardBody></Div>
       </Card>
+      
     </div>
   );
 };
